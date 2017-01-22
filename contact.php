@@ -8,7 +8,9 @@ class Contact {
  public $bintang = 0; 
  public $website = ""; 
  public $harga = 0;
- public $image = ""; 
+ public $image = "";
+ public $latitude = "";
+ public $longitude = "";
 } 
  
 ?> 
