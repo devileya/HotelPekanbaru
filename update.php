@@ -7,7 +7,7 @@ $obj = json_decode($json);
  
 //Insert Query 
 $result = mysqli_query($conn, "UPDATE hotel
-SET nama='".$obj->{'nama'}."', alamat='".$obj->{'alamat'}."', notelp='".$obj->{'notelp'}."', bintang=".$obj->{'bintang'}.", website='".$obj->{'website'}."', harga=".$obj->{'harga'}.", gambar='".$obj->{'image'}."' 
+SET nama='".$obj->{'nama'}."', alamat='".$obj->{'alamat'}."', notelp='".$obj->{'notelp'}."', bintang=".$obj->{'bintang'}.", website='".$obj->{'website'}."', harga=".$obj->{'harga'}.", gambar='".$obj->{'image'}."', latitude='".$obj->{'latitude'}."', longitude='".$obj->{'longitude'}."' 
 WHERE id = '".$obj->{'id'}."'"); 
 //mysql_close($con); 
 $conn->close(); 
