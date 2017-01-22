@@ -8,7 +8,7 @@ $obj = json_decode($json);
  
 //Insert Query 
 $result = mysqli_query($conn, "INSERT INTO hotel(nama,alamat,notelp,bintang,website,harga,gambar) 
-VALUES ('".$obj->{'nama'}."', '".$obj->{'alamat'}."', '".$obj->{'notelp'}."',".$obj->{'bintang'}.", '".$obj->{'website'}."', ".$obj->{'harga'}.", '".$obj->{'image'}."')"); 
+VALUES ('".$obj->{'nama'}."', '".$obj->{'alamat'}."', '".$obj->{'notelp'}."',".$obj->{'bintang'}.", '".$obj->{'website'}."', ".$obj->{'harga'}.", '".$obj->{'image'}."', '".$obj->{'latitude'}."', '".$obj->{'longitude'}."')"); 
 //mysql_close($con); 
 $conn->close(); 
 // 
