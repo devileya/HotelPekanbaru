@@ -17,6 +17,8 @@ if ($fetch->num_rows > 0) {
   $c->website = $row['website']; 
   $c->harga = $row['harga'];
   $c->image = $row['gambar'];  
+  $c->latitude = $row['latitude'];
+  $c->longitude = $row['longitude'];
   array_push($return_arr, $c); 
  } 
 } else { 
